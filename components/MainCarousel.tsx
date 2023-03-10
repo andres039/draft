@@ -7,7 +7,7 @@ import eagle from "/public/eagle.jpg";
 import Autoplay from "embla-carousel-autoplay";
 
 type Props = {
-  setTitleColor: (arg: string) => void
+  setTitleColor: (arg: string) => void;
 };
 
 const MainCarousel = ({ setTitleColor }: Props) => {
@@ -26,13 +26,27 @@ const MainCarousel = ({ setTitleColor }: Props) => {
       withIndicators
     >
       <Carousel.Slide w={"100vw"} h={"100vh"}>
-        <Image alt="picture of a tiny house" src={tinyHousePic} fill />
+        <Image
+          alt="picture of a tiny house"
+          src={tinyHousePic}
+          fill
+          style={{ objectFit: "cover" }}
+        />
       </Carousel.Slide>
       <Carousel.Slide w={"100vw"} h={"100vh"}>
-        <Image alt="eagle painting" src={eagle} fill />
+        <Image
+          alt="eagle painting"
+          src={eagle}
+          fill
+
+        />
       </Carousel.Slide>
       <Carousel.Slide>
-        <Image alt="inside the tiny house" src={tinyHouseInside} fill />
+        <Image
+          alt="inside the tiny house"
+          src={tinyHouseInside}
+          fill
+        />
       </Carousel.Slide>
     </Carousel>
   );

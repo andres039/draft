@@ -12,15 +12,19 @@ const Skate = () => {
   return (
     <Center pt={80}>
       <Stack spacing="md" p="lg">
-        <Carousel loop withIndicators w={"95vw"} h={"95vh"}>
+        <Carousel loop withIndicators w={"95vw"} h={"100vh"}>
           {images.map((image) => (
             <Carousel.Slide m={0} key={image}>
-              <AspectRatio ratio={2 / 4} mah={"90vh"} m={0}>
+              <AspectRatio ratio={2 / 4} h={"100vh"} m={0}>
                 <Image
                   alt="picture of a tiny house"
                   src={image}
                   fill
+                  blurDataURL="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                  placeholder="blur"
                   priority
+                  style={{ objectFit: "contain" }}
+
                 />
               </AspectRatio>
             </Carousel.Slide>

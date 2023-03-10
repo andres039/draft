@@ -3,7 +3,6 @@ import { Carousel } from "@mantine/carousel";
 import Image from "next/image";
 import { AspectRatio, Center, Stack, Text } from "@mantine/core";
 
-//Double check links here =>
 const images = [
   "https://ik.imagekit.io/4p3voulmt/renovations/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678466708459",
   "https://ik.imagekit.io/4p3voulmt/renovations/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678466717192",
@@ -24,17 +23,20 @@ const images = [
 
 const Renovations = () => {
   return (
-    <Center pt={80}>
-      <Stack spacing="md" p="lg">
-        <Carousel loop withIndicators w={"95vw"} h={"95vh"}>
+    <Center pt={80} m={0} px={0}>
+      <Stack spacing="md" px="0" maw={"95vw"}>
+        <Carousel loop withIndicators w={"100vw"} h={"100vh"} m={0}>
           {images.map((image) => (
             <Carousel.Slide m={0} key={image}>
-              <AspectRatio ratio={2 / 4} mah={"90vh"} m={0}>
+              <AspectRatio ratio={2 / 4} h={"100vh"} m={0}>
                 <Image
                   alt="picture of a tiny house"
                   src={image}
                   fill
                   priority
+                  style={{ objectFit: "contain" }}
+                  blurDataURL="https://ik.imagekit.io/4p3voulmt/structures/10.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678398546604"
+                  placeholder="blur"
                 />
               </AspectRatio>
             </Carousel.Slide>
