@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, MouseEventHandler } from "react";
 import { Burger, Group, Title } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 
+interface Nav {
+  opened: boolean;
+  titleColor: string;
+  showMenu: boolean;
+  openBurger: MouseEventHandler<HTMLButtonElement>;
+  setShowMenu: () => void;
+}
 const Navigation = ({
   opened,
   openBurger,
   titleColor,
   showMenu,
   setShowMenu,
-}) => {
+}: Nav) => {
   const matches = useMediaQuery("(max-width: 56.25em)");
   // const [opened, setOpened] = useState(false);
   // const openBurger = () => {

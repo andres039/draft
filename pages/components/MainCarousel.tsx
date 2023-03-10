@@ -6,7 +6,11 @@ import tinyHouseInside from "../../public/tinyHouseInside.jpg";
 import eagle from "../../public/eagle.jpg";
 import Autoplay from "embla-carousel-autoplay";
 
-const MainCarousel = ({ setTitleColor }) => {
+type Props = {
+  setTitleColor: (arg: string) => void
+};
+
+const MainCarousel = ({ setTitleColor }: Props) => {
   const autoplay = useRef(Autoplay({ delay: 2200 }));
 
   return (

@@ -1,9 +1,12 @@
 import { Button, Center, Stack } from "@mantine/core";
-import React, { useState } from "react";
+import React, { useState, PropsWithChildren, ReactNode } from "react";
 import Navigation from "./Navigation";
 import { useRouter } from "next/router";
 
-const Layout = ({ children }) => {
+interface child {
+  children: ReactNode;
+}
+const Layout = ({ children }: PropsWithChildren<child>) => {
   const [showMenu, setShowMenu] = useState(false);
   const [titleColor] = useState("black");
   const router = useRouter();

@@ -1,13 +1,9 @@
-import { AspectRatio, Grid, Overlay, Title } from "@mantine/core";
-import { useHover } from "@mantine/hooks";
-import Image from "next/image";
-import Link from "next/link";
-import React, { ReactNode } from "react";
-import tinyHousePic from "../public/tinyHouse.jpeg";
+import { Grid } from "@mantine/core";
+import React from "react";
 import FrontImage from "./components/FrontImage";
 
 const Projects = () => {
-  const { hovered, ref } = useHover();
+
   const files = [
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/commercial.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464493",
