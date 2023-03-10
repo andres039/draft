@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { Stack, Title, Center } from "@mantine/core";
-import Navigation from "./components/Navigation";
-import MainCarousel from "./components/MainCarousel";
+import Navigation from "../components/Navigation";
+import MainCarousel from "../components/MainCarousel";
 import Link from "next/link";
 
 export default function Home() {

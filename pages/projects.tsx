@@ -1,45 +1,43 @@
 import { Grid } from "@mantine/core";
 import React from "react";
-import FrontImage from "./components/FrontImage";
+import FrontImage from "../components/FrontImage";
 
 const Projects = () => {
-
   const files = [
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/commercial.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464493",
+      path: "/../public/covers/commercial.jpg",
       title: "Commercial",
       link: "/projects/commercial",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/community.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463419",
+      path: "/../public/covers/community.jpg",
       title: "Community",
       link: "",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/Portfolio.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464221",
+      path: "/../public/covers/Portfolio.jpg",
       title: "Portfolio",
       link: "",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/renovations.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464318",
+      path: "/../public/covers/renovations.jpg",
       title: "Renovations",
       link: "",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/retreat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464321",
+      path: "/../public/covers/retreat.jpg",
       title: "Retreat",
       link: "",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/site.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463839",
+      path: "/../public/covers/site.jpg",
       title: "Site",
       link: "",
     },
     {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/skate.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463632",
+      path: "/../public/covers/skate.jpg",
       title: "Skate",
       link: "",
-
     },
   ];
   return (
