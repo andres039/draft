@@ -6,7 +6,7 @@ import React, { ReactNode } from "react";
 import tinyHousePic from "../public/tinyHouse.jpeg";
 import FrontImage from "./components/FrontImage";
 
-const projects = () => {
+const Projects = () => {
   const { hovered, ref } = useHover();
   const files = [
     {
@@ -67,4 +67,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

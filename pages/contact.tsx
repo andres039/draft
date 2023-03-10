@@ -10,7 +10,7 @@ import {
 
 import { useForm } from "@mantine/form";
 
-export default function contact() {
+export default function Contact() {
 
   const form = useForm({
     initialValues: {
