@@ -15,11 +15,11 @@ const about = () => {
           />
           <Paper shadow="xs" p="md" withBorder>
             <Text size="xl">
-              I am a recent dean's list graduate from the Architectural
+              I am a recent dean&apos;s list graduate from the Architectural
               Technician program offered at Algonquin College. I have a passion
-              for sustainable building design, and I'm dedicated to continue
-              learning new skills. I'm extremely detail focused and committed to
-              established deadlines. I like to hike and cook. I'm also a big fan
+              for sustainable building design, and I&apos;m dedicated to continue
+              learning new skills. I&apos;m extremely detail focused and committed to
+              established deadlines. I like to hike and cook. I&apos;m also a big fan
               of all pets.I have a personal goal to study and complete my green
               globes, BCIN, WELL, and LEED green associate exams within the
               year.
