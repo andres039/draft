@@ -42,7 +42,7 @@ const Projects = () => {
   ];
   return (
     <>
-      <Grid pt="10vh" m="0" p="lg">
+      <Grid pt="10vh" m="0" p="lg" mih={"90vh"} style={{ backgroundColor: "#E9ECEF"}}>
         {/* {files.map((file) => {
           <FrontImage file={file} key={file.path} />;
         })} */}
