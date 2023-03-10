@@ -12,32 +12,32 @@ const Projects = () => {
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/community.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463419",
       title: "Community",
-      link: "",
+      link: "/projects/community",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/Portfolio.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464221",
       title: "Portfolio",
-      link: "",
+      link: "/projects/portfolio",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/renovations.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464318",
       title: "Renovations",
-      link: "",
+      link: "/projects/renovations",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/retreat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464321",
       title: "Retreat",
-      link: "",
+      link: "/projects/retreat",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/site.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463839",
       title: "Site",
-      link: "",
+      link: "/projects/site",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/skate.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463632",
       title: "Skate",
-      link: "",
+      link: "/projects/skate",
     },
   ];
   return (
