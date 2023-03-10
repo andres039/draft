@@ -20,10 +20,10 @@ const project = () => {
   return (
     <Center pt={80}>
       <Stack spacing="md" p="lg">
-        <Carousel loop withIndicators w={"95vw"} mah={"70vh"}>
+        <Carousel loop withIndicators w={"95vw"} h={"95vh"}>
           {images.map((image) => (
             <Carousel.Slide m={0} key={image}>
-              <AspectRatio ratio={12 / 4} mah={"70vh"} m={0}>
+              <AspectRatio ratio={2 / 4} mah={"90vh"} m={0}>
                 <Image alt="picture of a tiny house" src={image} fill priority />
               </AspectRatio>
             </Carousel.Slide>
