@@ -19,7 +19,6 @@ const Layout = ({ children }: PropsWithChildren<child>) => {
     <>
       <Navigation
         showMenu={showMenu}
-        setShowMenu={setShowMenu}
         titleColor={titleColor}
         openBurger={openBurger}
         opened={opened}
