@@ -22,6 +22,7 @@ const Layout = ({ children }: PropsWithChildren<child>) => {
         titleColor={titleColor}
         openBurger={openBurger}
         opened={opened}
+
       />
       <main style={{ margin: 0 }}>
         {showMenu ? (

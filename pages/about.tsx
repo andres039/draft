@@ -38,7 +38,7 @@ const about = () => {
         </MediaQuery>
         <Avatar
           src="https://ik.imagekit.io/4p3voulmt/Profile_Picture.jpg?updatedAt=1678589781114"
-          alt="it's me"
+          alt="It's me"
           size={"25%"}
           radius="xl"
           m="md"

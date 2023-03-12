@@ -15,7 +15,6 @@ const FrontImage = ({ file }: File) => {
   const { hovered, ref } = useHover();
 
   return (
-    <Grid.Col xs={6} md={4}>
       <AspectRatio ratio={9 / 4} ref={ref}>
         <Image alt="picture of a tiny house" src={file.path} fill />
         {hovered && (
@@ -26,7 +25,6 @@ const FrontImage = ({ file }: File) => {
           </Link>
         )}
       </AspectRatio>
-    </Grid.Col>
   );
 };
 

@@ -40,25 +40,26 @@ const Projects = () => {
       title: "Site Analysis",
       link: "/projects/site",
     },
+    {
+      path: "https://ik.imagekit.io/4p3voulmt/Tiny_house/Tiny_House_Project_Picture.jpg?updatedAt=1678631821755",
+      title: "THOW",
+      link: "/projects/tinyhouse",
+    },
   ];
   return (
-    <>
-      <Grid pt="10vh" m="0" p="lg" mih={"90vh"} style={{ backgroundColor: "#E9ECEF"}}>
-        {/* {files.map((file) => {
-          <FrontImage file={file} key={file.path} />;
-        })} */}
-        <FrontImage file={files[0]} />
-        <FrontImage file={files[1]} />
-
-        <FrontImage file={files[2]} />
-
-        <FrontImage file={files[3]} />
-
-        <FrontImage file={files[4]} />
-        <FrontImage file={files[5]} />
-        <FrontImage file={files[6]} />
-      </Grid>
-    </>
+    <Grid
+      pt="10vh"
+      m="0"
+      mih={"90vh"}
+      style={{ backgroundColor: "#E9ECEF" }}
+      px={0}
+    >
+      {files.map((file) => (
+        <Grid.Col xs={6} md={4}>
+          <FrontImage file={file} />
+        </Grid.Col>
+      ))}
+    </Grid>
   );
 };
 

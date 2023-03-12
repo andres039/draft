@@ -19,11 +19,12 @@ const Navigation = ({ opened, openBurger, titleColor, showMenu }: Nav) => {
   // };
   return (
     <Group
-      miw={"100vw"}
+      w={"100vw"}
       style={{ zIndex: 20, position: "absolute" }}
       position="apart"
-      px={35}
+      px={30}
       py={15}
+      m={0}
     >
       <Link href="/" style={{ textDecoration: "none", color: titleColor }}>
         <Title color={titleColor} style={{ fontFamily: "@fontsource/lobster" }}>
