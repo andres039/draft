@@ -5,8 +5,6 @@ import {
   AspectRatio,
   Box,
   Center,
-  Divider,
-  List,
   Space,
   Stack,
   Text,
@@ -44,12 +42,6 @@ const Tiny = () => {
         </Carousel>
         <Box px={"20%"} py={"xl"}>
           <Title>THOW</Title>
-          <Space h="lg" />
-          <List>
-            <List.Item>Semester 3 </List.Item>
-            <List.Item>Design Course #1 </List.Item>
-            <List.Item>Independent Work Term Project</List.Item>
-          </List>
           <Space h="lg" />
           <Text>
             In 2020, I decided to apply to Algonquin for the Architectural

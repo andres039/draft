@@ -9,24 +9,25 @@ type Props = {
 
 const images = [
   {
-    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Picture.jpg?updatedAt=1678589373385",
-    alt: "refuge in the snow",
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carsel_Picture_3.jpg?updatedAt=1678589373995",
+    alt: "rendered house in the mountain",
+  },
+  {
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Pciture_4.jpg?updatedAt=1678589374962",
+    alt: "inside the tiny house",
   },
   {
     url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Picture_2.jpg?updatedAt=1678589373406",
     alt: "front of building",
   },
   {
-    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carsel_Picture_3.jpg?updatedAt=1678589373995",
-    alt: "rendered how in the mountain",
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Picture.jpg?updatedAt=1678589373385",
+    alt: "refuge in the snow",
   },
-  {
-    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Pciture_4.jpg?updatedAt=1678589374962",
-    alt: "inside the tiny house",
-  },
+
 ];
 const MainCarousel = ({ setTitleColor }: Props) => {
-  const autoplay = useRef(Autoplay({ delay: 2500 }));
+  const autoplay = useRef(Autoplay({ delay: 2800 }));
 
   return (
     <Carousel
@@ -42,9 +43,10 @@ const MainCarousel = ({ setTitleColor }: Props) => {
     >
       {images.map((image) => (
         <Carousel.Slide w={"100vw"} h={"100vh"} key={image.url}>
-          <Image alt={image.alt} src={image.url}  fill style={{opacity: 1}} />
+          <Image alt={image.alt} src={image.url} fill style={{ opacity: 1 }} />
         </Carousel.Slide>
       ))}
+
     </Carousel>
   );
 };

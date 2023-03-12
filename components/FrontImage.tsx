@@ -15,7 +15,7 @@ const FrontImage = ({ file }: File) => {
   const { hovered, ref } = useHover();
 
   return (
-      <AspectRatio ratio={9 / 4} ref={ref}>
+      <AspectRatio ratio={8 / 4} ref={ref}>
         <Image alt="picture of a tiny house" src={file.path} fill priority />
         {hovered && (
           <Link href={file.link}>

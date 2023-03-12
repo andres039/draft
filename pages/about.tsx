@@ -15,12 +15,13 @@ const about = () => {
   };
   const paddingTop: CSSObject = {
     pt: "10%",
+    imageSize: "50%"
   };
   return (
     <MediaQuery largerThan="md" styles={paddingTop}>
-      <Stack px={"20%"} pt={"10%"} align="center">
+      <Stack px={"20%"} pt={"20%"} align="center">
         <MediaQuery largerThan="md" styles={thin}>
-          <Paper p="md">
+          <Paper p="xl">
             <Text size="xl">
               I am a dean&apos;s list graduate from the Architectural Technician
               program offered at Algonquin College. I have a passion for
@@ -39,9 +40,10 @@ const about = () => {
         <Avatar
           src="https://ik.imagekit.io/4p3voulmt/Profile_Picture.jpg?updatedAt=1678589781114"
           alt="It's me"
-          size={"25%"}
-          radius="xl"
+          size={"12vh"}
+          radius="50%"
           m="md"
+
         />
       </Stack>
     </MediaQuery>

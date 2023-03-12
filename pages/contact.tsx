@@ -27,7 +27,7 @@ export default function Contact() {
   });
   return (
     <Center h={"100vh"}>
-      <Card style={{ backgroundColor: "#FFE8CC" }}>
+      <Card >
         <form
           action="https://formsubmit.co/af6ad45c866a89143aa66f9646eb8631"
           method="POST"

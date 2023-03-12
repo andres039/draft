@@ -47,7 +47,8 @@ const Retreat = () => {
           <List>
             <List.Item>Semester 3 </List.Item>
             <List.Item>Design Course #1 </List.Item>
-            <List.Item>Independent Work Term Project</List.Item>
+            <List.Item>Independent Work </List.Item>
+            <List.Item>Term Project</List.Item>
           </List>
           <Space h="lg" />
 

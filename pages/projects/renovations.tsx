@@ -56,6 +56,7 @@ const Renovations = () => {
             <Title>Renovations</Title>
             <Space h="md" />
             <List>
+              <List.Item>Semester 3</List.Item>
               <List.Item>Working Drawings #3</List.Item>
               <List.Item>Independent Work</List.Item>
               <List.Item>Term Project</List.Item>
