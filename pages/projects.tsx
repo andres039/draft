@@ -5,39 +5,40 @@ import FrontImage from "../components/FrontImage";
 const Projects = () => {
   const files = [
     {
+      path: "https://ik.imagekit.io/4p3voulmt/covers/Portfolio.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464221",
+      title: "Portfolio",
+      link: "/projects/portfolio",
+    },
+    {
+      path: "https://ik.imagekit.io/4p3voulmt/covers/retreat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464321",
+      title: "Retreat House",
+      link: "/projects/retreat",
+    },
+    {
+      path: "https://ik.imagekit.io/4p3voulmt/covers/renovations.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464318",
+      title: "Renovation",
+      link: "/projects/renovations",
+    },
+    {
+      path: "https://ik.imagekit.io/4p3voulmt/covers/skate.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463632",
+      title: "Warming Hut",
+      link: "/projects/skate",
+    },
+    {
       path: "https://ik.imagekit.io/4p3voulmt/covers/commercial.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464493",
       title: "Commercial",
       link: "/projects/commercial",
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/community.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463419",
-      title: "Community",
+      title: "Community Center",
       link: "/projects/community",
     },
-    {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/Portfolio.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464221",
-      title: "Portfolio",
-      link: "/projects/portfolio",
-    },
-    {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/renovations.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464318",
-      title: "Renovations",
-      link: "/projects/renovations",
-    },
-    {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/retreat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396464321",
-      title: "Retreat",
-      link: "/projects/retreat",
-    },
+
     {
       path: "https://ik.imagekit.io/4p3voulmt/covers/site.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463839",
-      title: "Site",
+      title: "Site Analysis",
       link: "/projects/site",
-    },
-    {
-      path: "https://ik.imagekit.io/4p3voulmt/covers/skate.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678396463632",
-      title: "Skate",
-      link: "/projects/skate",
     },
   ];
   return (

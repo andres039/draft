@@ -1,17 +1,32 @@
 import React, { useRef } from "react";
 import { Carousel } from "@mantine/carousel";
 import Image from "next/image";
-import tinyHousePic from "/public/tinyHouse.jpeg";
-import tinyHouseInside from "/public/tinyHouseInside.jpg";
-import eagle from "/public/eagle.jpg";
 import Autoplay from "embla-carousel-autoplay";
 
 type Props = {
   setTitleColor: (arg: string) => void;
 };
 
+const images = [
+  {
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Picture.jpg?updatedAt=1678589373385",
+    alt: "refuge in the snow",
+  },
+  {
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Picture_2.jpg?updatedAt=1678589373406",
+    alt: "front of building",
+  },
+  {
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carsel_Picture_3.jpg?updatedAt=1678589373995",
+    alt: "rendered how in the mountain",
+  },
+  {
+    url: "https://ik.imagekit.io/4p3voulmt/carousel/Main_Carosel_Pciture_4.jpg?updatedAt=1678589374962",
+    alt: "inside the tiny house",
+  },
+];
 const MainCarousel = ({ setTitleColor }: Props) => {
-  const autoplay = useRef(Autoplay({ delay: 2200 }));
+  const autoplay = useRef(Autoplay({ delay: 2500 }));
 
   return (
     <Carousel
@@ -25,29 +40,11 @@ const MainCarousel = ({ setTitleColor }: Props) => {
       withControls={false}
       withIndicators
     >
-      <Carousel.Slide w={"100vw"} h={"100vh"}>
-        <Image
-          alt="picture of a tiny house"
-          src={tinyHousePic}
-          fill
-          style={{ objectFit: "cover" }}
-        />
-      </Carousel.Slide>
-      <Carousel.Slide w={"100vw"} h={"100vh"}>
-        <Image
-          alt="eagle painting"
-          src={eagle}
-          fill
-
-        />
-      </Carousel.Slide>
-      <Carousel.Slide>
-        <Image
-          alt="inside the tiny house"
-          src={tinyHouseInside}
-          fill
-        />
-      </Carousel.Slide>
+      {images.map((image) => (
+        <Carousel.Slide w={"100vw"} h={"100vh"}>
+          <Image alt={image.alt} src={image.url} key={image.url} fill style={{opacity: 1}} />
+        </Carousel.Slide>
+      ))}
     </Carousel>
   );
 };
