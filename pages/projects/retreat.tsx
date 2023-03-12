@@ -53,7 +53,7 @@ const Retreat = () => {
           the possibility of solar gains. This project also gave me the
           opportunity to explore Revit and to learn how to create interesting
           shapes with the software. The design concepts implemented were
-          carefully considered while taking the 'client's' requirements
+          carefully considered while taking the &apos;client&apos;s&apos; requirements
           seriously.
         </Text>
       </Stack>

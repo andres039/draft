@@ -41,8 +41,8 @@ const MainCarousel = ({ setTitleColor }: Props) => {
       withIndicators
     >
       {images.map((image) => (
-        <Carousel.Slide w={"100vw"} h={"100vh"}>
-          <Image alt={image.alt} src={image.url} key={image.url} fill style={{opacity: 1}} />
+        <Carousel.Slide w={"100vw"} h={"100vh"} key={image.url}>
+          <Image alt={image.alt} src={image.url}  fill style={{opacity: 1}} />
         </Carousel.Slide>
       ))}
     </Carousel>
