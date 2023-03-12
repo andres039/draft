@@ -46,7 +46,7 @@ const Projects = () => {
     },
     {
       path: "https://ik.imagekit.io/4p3voulmt/Banner_Pictures/Tech_Writing.jpg?updatedAt=1678571805788",
-      title: "Technical Writting",
+      title: "Technical Writing",
       link: "/projects/writting",
     },
     {
