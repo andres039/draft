@@ -55,7 +55,7 @@ const Projects = () => {
       px={0}
     >
       {files.map((file) => (
-        <Grid.Col xs={6} md={4}>
+        <Grid.Col xs={6} md={4} key={file.path}>
           <FrontImage file={file} />
         </Grid.Col>
       ))}

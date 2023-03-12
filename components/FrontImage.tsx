@@ -16,7 +16,7 @@ const FrontImage = ({ file }: File) => {
 
   return (
       <AspectRatio ratio={9 / 4} ref={ref}>
-        <Image alt="picture of a tiny house" src={file.path} fill />
+        <Image alt="picture of a tiny house" src={file.path} fill priority />
         {hovered && (
           <Link href={file.link}>
             <Overlay color="#000" opacity={0.5} p={20}>
