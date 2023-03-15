@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { Stack, Title, Center } from "@mantine/core";
-import Navigation from "../components/Navigation";
 import MainCarousel from "../components/MainCarousel";
 import Link from "next/link";
 
@@ -22,11 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <Navigation
-          titleColor={titleColor}
-          setShowMenu={setShowMenu}
-          showMenu={showMenu}
-        /> */}
+
 
         {showMenu ? (
           <Center miw={"100vw"} mih={"100vh"}>
