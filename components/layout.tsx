@@ -31,7 +31,7 @@ const Layout = ({ children }: PropsWithChildren<child>) => {
       <main style={{ margin: 0 }}>
         {showMenu ? (
           <Center miw={"100vw"} mih={"100vh"}>
-            <Stack spacing="xl">
+            <Stack spacing="xl" m={0}>
               <Button
                 color={titleColor.about}
                 onClick={() => {
